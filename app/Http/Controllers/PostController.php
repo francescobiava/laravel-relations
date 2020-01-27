@@ -99,7 +99,7 @@ class PostController extends Controller
     {
         //Prima cancello la tabella associata, altrimenti non potrei cancellare post che è la tabella padre
         $post->postInformation->delete();
-
+        $post->tags()->sync([]);
         $post->delete();
 
         return redirect()->back();
