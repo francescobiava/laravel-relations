@@ -11369,3 +11369,7 @@ body {
   margin: 10px 0 30px;
 }
 
+li {
+  list-style-type: none;
+}
+
